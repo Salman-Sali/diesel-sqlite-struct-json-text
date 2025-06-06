@@ -9,7 +9,7 @@ serde_json = "*"
 
 ### The target struct
 ```rust 
-#[diesel_struct_json_text]
+#[diesel_sqlite_struct_json_text]
 pub struct MyJson {
     pub my_item: String,
     pub my_item_2: i32
