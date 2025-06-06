@@ -3,7 +3,7 @@ use syn::{parse_macro_input, DeriveInput};
 use quote::quote;
 
 #[proc_macro_attribute]
-pub fn diesel_struct_json_text(_args: TokenStream, input: TokenStream) -> TokenStream {
+pub fn diesel_sqlite_struct_json_text(_args: TokenStream, input: TokenStream) -> TokenStream {
     let input = parse_macro_input!(input as DeriveInput);
     let name = &input.ident;
 

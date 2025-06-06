@@ -1,3 +1,12 @@
+### Your cargo.toml
+```toml
+[dependencies]
+diesel = { version="*", features= ["sqlite"]}
+serde = {version = "*", features = ["derive"]}
+serde_json = "*"
+```
+
+
 ### The target struct
 ```rust 
 #[diesel_struct_json_text]

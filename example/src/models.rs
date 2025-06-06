@@ -1,5 +1,5 @@
 use diesel::prelude::*;
-use diesel_struct_json_text::diesel_struct_json_text;
+use diesel_sqlite_struct_json_text::diesel_sqlite_struct_json_text;
 
 #[derive(Queryable, Selectable, Debug, Clone)]
 #[diesel(table_name = crate::schema::posts)]
@@ -31,7 +31,7 @@ impl Default for NewPost {
     }
 }
 
-#[diesel_struct_json_text]
+#[diesel_sqlite_struct_json_text]
 #[derive(Clone)]
 pub struct MyJsonStruct {
     pub text: String,

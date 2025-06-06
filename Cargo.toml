@@ -1,7 +1,12 @@
 [package]
-name = "diesel-struct-json-text"
+name = "diesel-sqlite-struct-json-text"
 version = "0.1.0"
 edition = "2024"
+description = "This proc macro attribute will allow you to store the target struct as json in TEXT field in diesel sqlite."
+homepage = "https://github.com/Salman-Sali/diesel-struct-json-text"
+readme = "readme.md"
+license = "MIT"
+keywords = ["diesel", "sqlite", "struct", "json", "text", "sql type"]
 
 [lib]
 proc-macro = true
