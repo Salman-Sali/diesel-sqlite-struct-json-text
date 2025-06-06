@@ -6,7 +6,7 @@ description = "This proc macro attribute will allow you to store the target stru
 homepage = "https://github.com/Salman-Sali/diesel-struct-json-text"
 readme = "readme.md"
 license = "MIT"
-keywords = ["diesel", "sqlite", "struct", "json", "text", "sql type"]
+keywords = ["diesel", "sqlite", "json", "text", "sql"]
 
 [lib]
 proc-macro = true
