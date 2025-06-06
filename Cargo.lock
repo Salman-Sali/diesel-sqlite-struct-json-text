@@ -67,7 +67,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "diesel-struct-json-text"
+name = "diesel-sqlite-struct-json-text"
 version = "0.1.0"
 dependencies = [
  "proc-macro2",
@@ -139,7 +139,7 @@ name = "example"
 version = "0.1.0"
 dependencies = [
  "diesel",
- "diesel-struct-json-text",
+ "diesel-sqlite-struct-json-text",
  "diesel_migrations",
  "libsqlite3-sys",
  "serde",
