@@ -8,7 +8,7 @@ pub fn diesel_sqlite_struct_json_text(_args: TokenStream, input: TokenStream) ->
     let name = &input.ident;
 
     return quote!{
-        #[derive(Debug, PartialEq, diesel::FromSqlRow, diesel::AsExpression, Eq, serde::Serialize, serde::Deserialize)]
+        #[derive(Debug, diesel::FromSqlRow, diesel::AsExpression, serde::Serialize, serde::Deserialize)]
         #[diesel(sql_type = diesel::sql_types::Text)]
         #input
 
